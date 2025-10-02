@@ -9,10 +9,30 @@ class Operaciones:
     def saludoAlejandroMontes(self):
         return "Mi nombre es " + self.alejandroMontes
 
-    ''' 
-    def operacionAsignada(self):
+
+    def promedio(self, lista):
+        """
+        Calcula el promedio de los números en una lista.
+        """
+        if len(lista) == 0:
+            return 0  # evitar división entre cero
+        return sum(lista) / len(lista)
+    def ordenarLista(self, lista):
+        return sorted(lista)
+    
+    def maximo(self, lista):
         #Realizar la operacion asignada
-    ''' 
+
+        if not lista:  # si la lista está vacía
+            return None
+
+        mayor = lista[0]
+        for numero in lista:
+            if numero > mayor:
+                mayor = numero
+        return mayor
+     
+
     def esImpar(self, numero):
         
         if numero % 2 != 0:
