@@ -9,7 +9,7 @@ class Operaciones:
     def saludoAlejandroMontes(self):
         return "Mi nombre es " + self.alejandroMontes
 
-
+    ''' 
     def operacionAsignada(self):
         #Realizar la operacion asignada
     ''' 
